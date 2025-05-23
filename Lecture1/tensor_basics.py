@@ -1,5 +1,5 @@
 import torch
-"""
+
 # scalar
 x = torch.empty(1)
 print(x) # output: tensor([9.7390e+32])
@@ -77,7 +77,7 @@ print(torch.cuda.is_available()) # output: False
 x = torch.tensor([5.5, 3])
 print(x) # output: tensor([5.5000, 3.0000])
 print(x.size()) # output: torch.Size([2]) 
-"""
+
 # optimization
 x = torch.tensor([5.5, 3], requires_grad=True)
 
