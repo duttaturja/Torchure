@@ -33,3 +33,42 @@ _, predictions2 = torch.max(Y_pred_bad, 1)
 
 print("Predictions (good):", predictions1.tolist())
 print("Predictions (bad):", predictions2.tolist())
+
+
+# Binary classification with sigmoid and binary cross-entropy loss
+class NeuralNet1(nn.Module):
+    def __init__(self, input_size, hidden_size):
+        super(NeuralNet1, self).__init__()
+        self.linear1 = nn.Linear(input_size, hidden_size)
+        self.relu = nn.ReLU()
+        self.linear2 = nn.Linear(hidden_size, 1)
+        
+
+    def forward(self, x):
+        out = self.linear1(x)
+        out = self.relu(out)
+        out = self.linear2(out)
+        # sigmoid at the end
+        y_pred = torch.sigmoid(out)
+        return y_pred
+
+model = NeuralNet1(input_size=28+28, hidden_size=5)
+criterion = nn.BCELoss()
+
+# multiclass classification with softmax and cross-entropy loss
+class NeuralNet2(nn.Module):
+    def __init__(self, input_size, hidden_size, num_classes):
+        super(NeuralNet2, self).__init__()
+        self.linear1 = nn.Linear(input_size, hidden_size)
+        self.relu = nn.ReLU()
+        self.linear2 = nn.Linear(hidden_size, num_classes)
+
+
+    def forward(self, x):
+        out = self.linear1(x)
+        out = self.relu(out)
+        out = self.linear2(out)
+        return out
+    
+model = NeuralNet2(input_size=28+28, hidden_size=5, num_classes=3)
+criterion = nn.CrossEntropyLoss()
