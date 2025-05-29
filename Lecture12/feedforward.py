@@ -104,7 +104,9 @@ def main():
 if __name__ == '__main__':
     model.to(device)
     main()
+
+    path = './Models/ff.pth'
     
     # # save the model checkpoint
-    # torch.save(model.state_dict(), 'ff.pth')
+    # torch.save(model.state_dict(), 'path')
     # print('Model saved to ff.pth')
