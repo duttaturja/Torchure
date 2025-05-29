@@ -106,5 +106,5 @@ if __name__ == '__main__':
     main()
     
     # # save the model checkpoint
-    # torch.save(model.state_dict(), 'model.pth')
-    # print('Model saved to model.pth')
+    # torch.save(model.state_dict(), 'ff.pth')
+    # print('Model saved to ff.pth')
