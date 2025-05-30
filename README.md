@@ -37,7 +37,7 @@ Torchure/
 ├── Lecture14/              # Transfer Learning
 ├── Lecture15/              # Tensorboard
 ├── Lecture16/              # Save and Load Model
-├── main.py                 # Will try to make a Tiny CLI to run any lecture module
+├── main.py                 # CLI to run any lecture module
 ├── requirements.txt        # Minimal dependency pin‑file (torch, torchvision, etc.)
 ├── pyproject.toml          # Optional modern build metadata
 ├── .python-version         # Local version pin for pyenv / poetry
