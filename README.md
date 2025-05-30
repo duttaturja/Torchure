@@ -1,7 +1,7 @@
-# Torchure: A beautiful PyTorch adventure.
+# Torchure: A Beautiful PyTorch Adventure.
 
 
-Welcome to **Torchure** – my personal lab notebook as I learn PyTorch by following Patrick Loeber’s acclaimed tutorial series 📺 ([video](https://www.youtube.com/watch?v=c36lUUr864M)) and the companion repository [`pytorchTutorial`](https://github.com/patrickloeber/pytorchTutorial). Think of this repo as a living, well‑commented scrapbook: each lecture folder contains bite‑sized code experiments, annotated notebooks, and challenges that build up to real‑world deep‑learning projects.
+Welcome to **Torchure** – my personal lab notebook as I learn PyTorch by following [!Patrick Loeber](https://github.com/patrickloeber)’s acclaimed tutorial series 📺 ([video](https://www.youtube.com/watch?v=c36lUUr864M)) and the companion repository [`pytorchTutorial`](https://github.com/patrickloeber/pytorchTutorial). Think of this repo as a living, well‑commented scrapbook: each lecture folder contains bite‑sized code experiments, annotated notebooks, and challenges that build up to real‑world deep‑learning projects.
 
 > **Why “Torchure”?**  Because PyTorch + Adventure = *Torchure* (and come on! *do* I really need to explain myself?) 🔥
 
@@ -15,7 +15,6 @@ Welcome to **Torchure** – my personal lab notebook as I learn PyTorch by foll
 | **Clean, Pedagogical Code** | Short scripts & notebooks focus on *one* concept at a time (tensors, autograd, CNNs, etc.). Each file is heavily commented. |
 | **Experiment‑Ready Boilerplate** | Re‑usable training loop, dataset utilities, and config files let you hack quickly without rewiring everything from scratch. |
 | **Python = 3.11 / PyTorch ≥ 2.0** | Modern syntax (type hints, pattern matching) and the latest torch goodies (torch.compile, MPS, etc.). |
-| **MIT‑licensed** | Learn, fork, remix – it’s all yours. |
 
 ---
 
@@ -70,31 +69,27 @@ pip install -r requirements.txt
 # or (if you prefer the modern toolchain)
 # pip install uv && uv pip install -r requirements.txt
 ```
-This pulls in **PyTorch**, **torchvision**, **tqdm**, **matplotlib**, and other small helpers.
+This pulls in **PyTorch**, **torchvision**, **tqdm**, **matplotlib**, and other requirements and small helpers.
 
 ### 4. Run an example
 ```bash
 python Lecture2/autograd.py   # train the Lecture 2 MLP on your GPU
 ```
 ---
-<!---
+| Command                           | Description                                                               |
+| --------------------------------- | ------------------------------------------------------------------------- |
+| `uv run main.py`                  | Launches the interactive CLI to run any lecture (Lecture01 to Lecture16). |
+| Then type `1` to `16`             | Runs the first Python script from the corresponding `LectureXX/` folder.  |
+| `exit`                            | Gracefully exits the interactive CLI.                                     |
+| `python -m torch.utils.benchmark` | Verifies if PyTorch detects your CPU/GPU correctly.                       |
 
-## 🛠️ Usage Cheatsheet
-| Command | Description |
-|---------|-------------|
-| `python main.py --lecture N` | Runs the `train.py` (or similar) inside `LectureN/` with default hyper‑parameters. |
-| `python main.py --help` | Full list of CLI flags (epochs, lr, batch‑size, model, device…). |
-| `python -m torch.utils.benchmark` | Verify that PyTorch is correctly seeing your CPU/GPU. |
-
---->
+---
 
 ## 📚 Learning Resources
 - **Tutorial Playlist:** Patrick Loeber – _"PyTorch – From Zero to Hero"_ → <https://www.youtube.com/watch?v=c36lUUr864M>
 - **Original Code:** <https://github.com/patrickloeber/pytorchTutorial>
 - **Official Docs:** <https://pytorch.org/docs>
 - **Cheat Sheet:** <https://pytorch.org/tutorials/beginner/quickstart_tutorial.html>
-
-> I regularly push new lessons as I progress through the series. **Watch⭐ the repo** to get notified.
 
 ---
 
