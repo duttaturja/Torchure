@@ -1,7 +1,7 @@
 # Torchure: A Beautiful PyTorch Adventure.
 
 
-Welcome to **Torchure** – my personal lab notebook as I learn PyTorch by following [!Patrick Loeber](https://github.com/patrickloeber)’s acclaimed tutorial series 📺 ([video](https://www.youtube.com/watch?v=c36lUUr864M)) and the companion repository [`pytorchTutorial`](https://github.com/patrickloeber/pytorchTutorial). Think of this repo as a living, well‑commented scrapbook: each lecture folder contains bite‑sized code experiments, annotated notebooks, and challenges that build up to real‑world deep‑learning projects.
+Welcome to **Torchure** – my personal lab notebook as I learn PyTorch by following [Patrick Loeber](https://github.com/patrickloeber)’s acclaimed tutorial series 📺 ([video](https://www.youtube.com/watch?v=c36lUUr864M)) and the companion repository [`pytorchTutorial`](https://github.com/patrickloeber/pytorchTutorial). Think of this repo as a living, well‑commented scrapbook: each lecture folder contains bite‑sized code experiments, annotated notebooks, and challenges that build up to real‑world deep‑learning projects.
 
 > **Why “Torchure”?**  Because PyTorch + Adventure = *Torchure* (and come on! *do* I really need to explain myself?) 🔥
 
